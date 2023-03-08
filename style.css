@@ -1,0 +1,25 @@
+
+#grid-container
+{
+    display: grid;
+    grid-gap:1px;
+    grid-template-columns: 1fr;
+    
+} 
+.grid_item:hover
+{
+    background-color: #993434;
+    padding: 00px;
+    text-align: center;
+    
+}
+h1
+{
+    text-align: center;
+}
+.color_div
+{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
