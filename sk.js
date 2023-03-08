@@ -10,7 +10,7 @@ for (let i = 0; i < cols*cols; i++) {
    
   const gridItem = document.createElement("div");
   gridItem.classList.add("grid-item");
-  gridItem.textContent = i + 1;
+  gridItem.textContent =  " ";
 
   gridContainer.appendChild(gridItem);
 }
@@ -43,7 +43,10 @@ item.forEach(function(x,i){
     }
     if(selectedColor){
       e.target.style.backgroundColor= selectedColor;
+      if(selectedColor!=='white'){
     stack.push(x)
+
+      }
     }
     
   })
@@ -52,14 +55,10 @@ item.forEach(function(x,i){
 // onclick  eraser
 
 
-  function clear()
- let eraser =document.getElementById("eraser")
- let eitem=document.querySelectorAll(".grid-item")
- eeraseritem.forEach(function (e){
-   e.addEventListener("click",(i)=>{
-    i.target.style.backgroundColor="white"
+let eraser =document.getElementById("eraser")
+eraser.addEventListener('click',clear);
+function clear(){
+  selectedColor='white'
+}
 
-  })
-})
 
-clear();

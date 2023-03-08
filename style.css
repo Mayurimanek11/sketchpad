@@ -2,16 +2,24 @@
 #grid-container
 {
     display: grid;
-    grid-gap:1px;
+    /* grid-gap:1px; */
     grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
     
 } 
-.grid_item:hover
+.grid-item:hover
 {
-    background-color: #993434;
-    padding: 00px;
+    background-color: #80808075;
     text-align: center;
+    border: 2px solid black;
     
+}
+.grid-item{
+    border: 1px solid black;
+    border-collapse: collapse;
+
 }
 h1
 {
